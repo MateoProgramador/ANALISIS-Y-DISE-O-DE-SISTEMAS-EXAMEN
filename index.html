@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Panadería y Pastelería "Delicias del Sur" - Sistema de Gestión de Inventario</title>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Panadería y Pastelería "Delicias del Sur"</h1>
+            <h2>SISTEMA DE GESTIÓN DE INVENTARIO</h2>
+        </header>
+
+        <section id="formulario">
+            <center><h3>INGRESAR PRODUCTOS</h3>  </center>
+            <form id="productoForm">
+                <label for="nombre">NOMBRE DEL PRODUCTO:</label>
+                <input type="text" id="nombre" name="nombre" required maxlength="20">
+
+
+                <label for="tipo">TIPO:</label>
+                <input type="text" id="tipo" name="tipo" required>
+
+                <label for="fechaCaducidad">FECHA DE CADUCIDAD:</label>
+                <input type="date" id="fechaCaducidad" name="fechaCaducidad" required>
+
+                <label for="cantidad">CANTIDAD:</label>
+                <input type="number" id="cantidad" name="cantidad" required>
+
+                <label for="precio">PRECIO:</label>
+                <input type="number" id="precio" name="precio" step="0.01" required>
+
+                <button type="button" onclick="enviarProducto()">Enviar Producto</button>
+            </form>
+        </section>
+
+        <section id="botones">
+            <button onclick="verInventario()">Ver Inventario</button>
+            <button onclick="mostrarTabla2()">Generar Informe</button>
+        </section>
+    </div>
+    
+<div id="tablaContainer">
+
+
+</div>
+    <footer>
+        <p>&copy; 2024 Panadería y Pastelería "Delicias del Sur". Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
